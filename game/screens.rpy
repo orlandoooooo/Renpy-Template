@@ -231,6 +231,7 @@ style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
 
+
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
@@ -264,7 +265,8 @@ screen quick_menu():
 init python:
     config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+# Changed this
+default quick_menu = False
 
 style quick_button is default
 style quick_button_text is button_text
@@ -361,7 +363,8 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # commented out to not use
+    # use navigation
 
     if gui.show_name:
 
@@ -467,7 +470,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                     transclude
 
-    use navigation
+    # commented out below to not use
+    # use navigation
 
     textbutton _("Return"):
         style "return_button"
