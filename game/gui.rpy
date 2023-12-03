@@ -57,14 +57,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-# File location Applications/renpy-8.1.3-sdk/renpy/common
-define gui.text_font = "Lato-Regular.ttf"
+define gui.text_font = "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "Lato-Regular.ttf"
+define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "Lato-Regular.ttf"
+define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
